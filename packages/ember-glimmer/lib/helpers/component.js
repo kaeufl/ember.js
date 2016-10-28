@@ -58,6 +58,14 @@ import { assert } from 'ember-metal';
   {{live-updating-chart}}
   ```
 
+  ## Block Usage
+  ```handlebars
+  {{! application.hbs }}
+  {{#component infographicComponentName}}
+    {{! template to be rendered into the component }}
+  {{/component}}
+  ```
+
   ## Nested Usage
 
   The `component` helper can be used to package a component path with initial attrs.
